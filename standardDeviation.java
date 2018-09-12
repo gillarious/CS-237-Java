@@ -33,14 +33,14 @@ public class standardDeviation {
         
         meanxnum = totalxnum / size;
         
-        for (int i = 0; i < size; i++) {
-            vartotal = vartotal + Math.sqrt(xnum[i] - meanxnum);
+        for (int j = 0; j < size; j++) {
+            vartotal = vartotal + Math.sqrt(xnum[j] - meanxnum);
         }
 
         variance = vartotal / (size - 1);
 
-        for (int i = 0; i < size; i++) {
-            stdtotal = stdtotal + Math.sqrt(xnum[i] - meanxnum);
+        for (int k = 0; k < size; k++) {
+            stdtotal = stdtotal + Math.sqrt(xnum[k] - meanxnum);
         }
 
         standardDev = Math.sqrt(stdtotal);
