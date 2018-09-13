@@ -31,10 +31,11 @@ public class standardDeviation {
           	totalxnum = totalxnum + xnum[i];
         }
         
-        meanxnum = totalxnum / size;
+        double sized = (double)size;
+        meanxnum = totalxnum / sized;
         
         for (int j = 0; j < size; j++) {
-            vartotal = vartotal + Math.sqrt(xnum[j] - meanxnum);
+            vartotal = vartotal + Math.sqrt(xnum[j] - meanxnum, 2);
         }
 
         variance = vartotal / (size - 1);
