@@ -38,7 +38,7 @@ public class standardDeviation {
           vartotal += Math.pow(xnum[j] - meanxnum, 2.0);
         }
 
-        variance = vartotal / (size - 1);
+        variance = vartotal / (sized - 1.0);
 
         for (int k = 0; k < size; k++) {
           stdtotal += Math.pow(xnum[k] - meanxnum, 2.0);
