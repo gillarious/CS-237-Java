@@ -25,23 +25,23 @@ public class standardDeviation {
         System.out.println("Measures of Relative Standing");
         
       	for (int i = 0; i < size; i++) {
-            System.out.print("Enter the numbers of calories per serving ");
-          	double x = sc.nextDouble();
-          	xnum[i] = x;
-          	totalxnum = totalxnum + xnum[i];
+          System.out.print("Enter the numbers of calories per serving ");
+          double x = sc.nextDouble();
+          xnum[i] = x;
+          totalxnum = totalxnum + xnum[i];
         }
         
         double sized = (double)size;
         meanxnum = totalxnum / sized;
         
         for (int j = 0; j < size; j++) {
-            vartotal = vartotal + Math.sqrt(xnum[j] - meanxnum, 2);
+          vartotal += Math.pow(xnum[j] - meanxnum, 2.0);
         }
 
         variance = vartotal / (size - 1);
 
         for (int k = 0; k < size; k++) {
-            stdtotal = stdtotal + Math.sqrt(xnum[k] - meanxnum);
+          stdtotal += Math.pow(xnum[k] - meanxnum, 2.0);
         }
 
         standardDev = Math.sqrt(stdtotal);
