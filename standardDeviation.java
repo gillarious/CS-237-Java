@@ -54,8 +54,8 @@ public class standardDeviation {
         System.out.print("Enter the value of the z1 ");
         z2 = sc.nextDouble();
         
-        zscorez1 = z1 + zscorex1 * standardDev;
-        zscorez2 = z2 + zscorex2 * standardDev;
+        zscorez1 = (z1 * standardDev) + meanxnum;
+        zscorez2 = (z2 * standardDev) + meanxnum;
 
         midrange = (xnum[0] + xnum[size-1]) / 2;
       
