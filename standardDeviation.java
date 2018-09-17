@@ -15,7 +15,6 @@ public class standardDeviation {
       	double variance = 0;
         double vartotal = 0;
       	double standardDev = 0;
-        double stdtotal = 0;
       	double zscorex1 = 0;
       	double zscorex2 = 0;
       	double zscorez1 = 0;
@@ -39,12 +38,8 @@ public class standardDeviation {
         }
 
         variance = vartotal / (sized - 1.0);
-
-        for (int k = 0; k < size; k++) {
-          stdtotal += Math.pow(xnum[k] - meanxnum, 2.0);
-        }
-
-        standardDev = Math.sqrt(stdtotal);
+        
+        standardDev = Math.sqrt(variance);
         
         System.out.print("Enter the value for x1 ");
         x1 = sc.nextDouble();
